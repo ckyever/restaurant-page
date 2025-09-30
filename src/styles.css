@@ -78,6 +78,15 @@ h6 {
 }
 /* End of CSS Reset */
 
+@font-face {
+  font-family: 'Ephesis';
+  src: url('./fonts/Ephesis-Regular.woff2') format('woff2'),
+    url('./fonts/Ephesis-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --main-background-color: #F3E6CC;
   --alternate-background-color: #D7D9D6;
@@ -128,6 +137,15 @@ body {
   flex-grow: 1;
   font-size: 4rem;
   color: var(--main-text-color);
+}
+
+.subheader {
+  font-size: 6rem;
+}
+
+.home-container > h1,
+.home-container > .subheader {
+  font-family: 'Ephesis';
 }
 
 #content {
