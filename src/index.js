@@ -1,3 +1,5 @@
 import "./styles.css";
+import showHome from './home.js';
 
-console.log("hello");
+const contentElement = document.querySelector("#content");
+showHome(contentElement);
