@@ -113,6 +113,7 @@ nav > button {
   font-size: 3rem;
   background-color: transparent;
   border: none;
+  letter-spacing: 0.4rem;
 }
 
 nav > button:hover {
@@ -122,7 +123,14 @@ nav > button:hover {
 }
 
 body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: var(--main-background-color);
+  letter-spacing: 0.4rem;
+}
+
+h1, .subheader {
+  font-family: 'Ephesis';
+  line-height: 1.0;
 }
 
 .home-image {
@@ -139,13 +147,13 @@ body {
   color: var(--main-text-color);
 }
 
-.subheader {
-  font-size: 6rem;
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.home-container > h1,
-.home-container > .subheader {
-  font-family: 'Ephesis';
+.subheader {
+  font-size: 6rem;
 }
 
 #content {
