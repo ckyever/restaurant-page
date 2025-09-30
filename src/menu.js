@@ -7,7 +7,6 @@ class FoodItem  {
 };
 
 const createMenuListItem = (food) => {
-  console.log(food);
   const listItem = document.createElement("li");
 
   const line1 = document.createElement("p");
