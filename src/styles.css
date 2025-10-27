@@ -123,6 +123,9 @@ nav > button:hover {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: var(--main-background-color);
 }
@@ -134,6 +137,9 @@ h1,
 }
 
 .home-image {
+  height: 100%;
+  width: 35vw;
+  object-fit: cover;
 }
 
 .home-container {
@@ -145,6 +151,7 @@ h1,
   flex-grow: 1;
   font-size: 4rem;
   color: var(--main-text-color);
+  text-align: center;
 }
 
 .heading {
@@ -216,6 +223,7 @@ h1,
 .about-image {
   margin-bottom: 80px;
   height: 500px;
+  object-fit: cover;
 }
 
 .about-text {
@@ -228,4 +236,117 @@ h1,
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+@media (max-width: 2040px) {
+  .home-container {
+    font-size: 2rem;
+  }
+
+  .subheader {
+    font-size: 4rem;
+  }
+
+  .menu-card {
+    width: 80%;
+    height: auto;
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+
+  .menu-card h2 {
+    font-size: 3rem;
+  }
+
+  .menu-card h3 {
+    font-size: 2rem;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-items .item {
+    font-size: 1.8rem;
+    gap: 200px;
+  }
+
+  .about-text {
+    width: auto;
+    margin: 0 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #content {
+    flex-direction: column;
+  }
+
+  .home-image {
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+  }
+
+  .about-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  nav button {
+    font-size: 2rem;
+  }
+
+  .home-container {
+    font-size: 1.4rem;
+  }
+
+  .subheader {
+    font-size: 3rem;
+  }
+
+  .menu-items .item {
+    gap: 100px;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav button {
+    font-size: 1.4rem;
+  }
+
+  .home-image {
+    margin-top: 0;
+  }
+
+  .home-container {
+    font-size: 1.4rem;
+  }
+
+  .subheader {
+    font-size: 2.4rem;
+  }
+
+  .menu-items .item {
+    gap: 40px;
+  }
+
+  .about-image {
+    height: 240px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
 }
