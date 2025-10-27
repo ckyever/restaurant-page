@@ -1,5 +1,5 @@
 /* CSS Reset from https: //www.joshwcomeau.com/css/custom-css-reset */
-de
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -79,20 +79,20 @@ h6 {
 /* End of CSS Reset */
 
 @font-face {
-  font-family: 'Ephesis';
-  src: url('./fonts/Ephesis-Regular.woff2') format('woff2'),
-    url('./fonts/Ephesis-Regular.woff') format('woff');
+  font-family: "Ephesis";
+  src: url("./fonts/Ephesis-Regular.woff2") format("woff2"),
+    url("./fonts/Ephesis-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --main-background-color: #F3E6CC;
-  --alternate-background-color: #EFECE8;
-  --highlight-color: #E9D27A;
-  --accent-color: #4E7D4A;
-  --main-text-color: #7B5535;
+  --main-background-color: #f3e6cc;
+  --alternate-background-color: #efece8;
+  --highlight-color: #e9d27a;
+  --accent-color: #4e7d4a;
+  --main-text-color: #7b5535;
 }
 
 header {
@@ -123,17 +123,17 @@ nav > button:hover {
 }
 
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: var(--main-background-color);
 }
 
-h1, .subheader {
-  font-family: 'Ephesis';
-  line-height: 1.0;
+h1,
+.subheader {
+  font-family: "Ephesis";
+  line-height: 1;
 }
 
 .home-image {
-  height: 85vh
 }
 
 .home-container {
@@ -169,7 +169,7 @@ h1, .subheader {
 }
 
 .menu-card h2 {
-  font-family: 'Ephesis';
+  font-family: "Ephesis";
   font-size: 6rem;
   color: var(--main-text-color);
   margin-bottom: 40px;
